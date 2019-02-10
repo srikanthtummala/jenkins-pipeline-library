@@ -1,11 +1,13 @@
-def CUSTOM_WORK_SPACE = "F:\\Jenkins_Workspace\\" +  "${env.JOB_NAME}" + "\\" + "${env.BUILD_NUMBER}"
+import org.foo.Utilities
 
-/*
 def call() {
-    //CUSTOM_WORK_SPACE = "F:\\Jenkins_Workspace\\" +  "${env.JOB_NAME}" + "\\" + "${env.BUILD_NUMBER}"
-    println(CUSTOM_WORK_SPACE)
+
+    Utilities uti = new Utilities()
+    println uti.CUSTOM_WORK_SPACE
+    println uti.VAR_1
+    println uti.VAR_2
+    println uti.VAR_3
 }
 
-return this;
+return this
 
-*/
