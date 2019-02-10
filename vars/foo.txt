@@ -1,0 +1,7 @@
+
+
+
+def call(){
+
+ def VAR_1 = "Hello"
+}
